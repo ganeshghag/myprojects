@@ -1,0 +1,11 @@
+{
+    data: [{
+        imagepath: 'images/news1.png',
+	textdesc: 'Add Local Authority or Organization',
+	textdet: 'Access content by subscribing to local and national organization'
+    },{
+        imagepath: 'images/news1.png',
+	textdesc: 'Add Local Authority or Organization',
+	textdet: 'Access content by subscribing to local and national organization'
+    }]
+}

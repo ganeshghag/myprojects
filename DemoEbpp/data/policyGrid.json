@@ -1,0 +1,31 @@
+{
+    data: [{
+        type: 'images/houseing.png',
+	number: 'P938283',
+        insured: 'Lara Smith',
+        period: '01/12/2000 to 01/12/2050',
+        premium: '$5,721.00',
+	status: 'In Force'
+    },{
+        type: 'images/life.png',
+	number: 'P938284',
+        insured: 'Donald Smith',
+        period: '01/12/2000 to 01/12/2050',
+        premium: '$5,720.00',
+	status: 'In Force'
+    },{
+        type: 'images/life.png',
+	number: 'P938284',
+        insured: 'Melanie Smith',
+        period: '01/12/2000 to 01/12/2050',
+        premium: '$5,720.00',
+	status: 'In Force'
+    },{
+        type: 'images/life.png',
+	number: 'P938284',
+        insured: 'Marsha Smith',
+        period: '01/12/2000 to 01/12/2050',
+        premium: '$5,720.00',
+	status: 'In Force'
+    }]
+}

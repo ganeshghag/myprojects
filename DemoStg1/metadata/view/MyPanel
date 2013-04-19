@@ -1,0 +1,202 @@
+{
+    "id": "ExtBox1-ext-gen3437",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "frame": true,
+        "height": 507,
+        "width": 679,
+        "layout": "vbox",
+        "title": "Car Listing",
+        "designer|userClassName": "MyPanel",
+        "container|align": "stretch"
+    },
+    "customConfigs": [],
+    "designerId": "4c690326-a861-4ef5-bc3a-090e8f6617fb",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen4111",
+            "type": "gridpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 264,
+                "width": 511,
+                "title": null,
+                "store": "CarDataStore",
+                "designer|userClassName": "MyGridPanel",
+                "layout|flex": 1
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4161",
+                    "type": "gridview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8747",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "manufacturer",
+                        "text": "Manufacturer",
+                        "designer|userClassName": "MyColumn1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8758",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "model",
+                        "text": "Model",
+                        "designer|userClassName": "MyColumn2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8769",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "price",
+                        "text": "Price",
+                        "designer|userClassName": "MyColumn3"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8780",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "wiki",
+                        "text": "Wiki",
+                        "designer|userClassName": "MyColumn4"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8791",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "img",
+                        "text": "Img",
+                        "designer|userClassName": "MyColumn5"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8802",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "quality",
+                        "text": "Quality",
+                        "designer|userClassName": "MyColumn6"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen11095",
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelSelect",
+                        "implHandler": [
+                            "\r",
+                            "\r",
+                            "// grab a reference to the detailPanel via itemId\r",
+                            " // the # in front of the id indicates that we would like to grab a reference by\r",
+                            " var detailPanel = this.child('#detailPanel');\r",
+                            " // update the detailPanel with data\r",
+                            " // this will trigger the tpl to become updates\r",
+                            " detailPanel.update(record.data);\r",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me",
+                        "designer|userClassName": "onGridpanelSelect"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen10641",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "detailPanel",
+                "tpl": "<img src=\"data/{img}\" style=\"float: right\" />\n  Manufacturer: {manufacturer}<br>\n  Model: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>\n  Price: {price:usMoney}<br>",
+                "title": "My Panel",
+                "designer|userClassName": "MyPanel1",
+                "layout|flex": 1
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

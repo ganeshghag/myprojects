@@ -1,0 +1,90 @@
+{
+    "id": "ExtBox1-ext-gen23225",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "height": 509,
+        "width": 602,
+        "title": "Tree Demo Panel",
+        "designer|userClassName": "MyPanel"
+    },
+    "customConfigs": [],
+    "designerId": "069de56a-a2a7-4481-bfd7-fbdd5b29b80a",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen23632",
+            "type": "treepanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 250,
+                "width": 400,
+                "title": "My Tree Panel",
+                "store": "MyJsonTreeStore",
+                "designer|userClassName": "TreeGrid1"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-treegridpanel",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen23641",
+                    "type": "treeview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTreeView"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen23645",
+                    "type": "treecolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "text",
+                        "flex": 1,
+                        "text": "Nodes",
+                        "designer|userClassName": "MyTreeColumn"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen23649",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "value",
+                        "text": "Value",
+                        "designer|userClassName": "MyColumn5"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,969 @@
+{
+    "id": "ExtBox1-ext-gen2897",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "height": 405,
+        "id": "basePanel",
+        "width": 627,
+        "activeItem": 0,
+        "layout": "card",
+        "title": "",
+        "designer|userClassName": "MyPanel"
+    },
+    "customConfigs": [],
+    "designerId": "be388f65-9949-4ec8-a62b-3b2c3ff2f908",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen3372",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "loginPanel",
+                "title": "LoginPanel",
+                "designer|userClassName": "MyPanel1"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen8337",
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Login",
+                        "designer|userClassName": "MyTextField2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8527",
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Password",
+                        "designer|userClassName": "MyTextField3"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen8729",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Login",
+                        "designer|userClassName": "MyButton"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen9365",
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "\r",
+                                    "Ext.getCmp('basePanel').getLayout().setActiveItem(1);"
+                                ],
+                                "name": "click",
+                                "scope": "me",
+                                "designer|userClassName": "onButtonClick"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen3768",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "homePanel",
+                "title": "",
+                "designer|userClassName": "MyPanel2"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4574",
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyToolbar",
+                        "dock": "top"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen4770",
+                            "type": "cyclebutton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "showText": true,
+                                "designer|userClassName": "MyCycleButton",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen4782",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 120,
+                                        "designer|userClassName": "MyMenu"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen4789",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "MenuOne",
+                                                "checked": true,
+                                                "designer|userClassName": "MyCheckItem"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen12747",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMenucheckitemClick",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('homeBody').getLayout().setActiveItem(0);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onMenucheckitemClick"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen4801",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "checked": false,
+                                                "designer|userClassName": "MyCheckItem1"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen4813",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "checked": false,
+                                                "designer|userClassName": "MyCheckItem2"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen5668",
+                            "type": "cyclebutton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "showText": true,
+                                "designer|userClassName": "MyCycleButton1",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen5680",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 120,
+                                        "designer|userClassName": "MyMenu1"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen5687",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "MenuTwo",
+                                                "checked": true,
+                                                "designer|userClassName": "MyCheckItem3"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen14535",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMenucheckitemClick1",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('homeBody').getLayout().setActiveItem(1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onMenucheckitemClick1"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen5699",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "checked": false,
+                                                "designer|userClassName": "MyCheckItem4"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen5711",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "checked": false,
+                                                "designer|userClassName": "MyCheckItem5"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen6685",
+                            "type": "cyclebutton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "showText": true,
+                                "designer|userClassName": "MyCycleButton2",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen6697",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 120,
+                                        "designer|userClassName": "MyMenu2"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen6704",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "MenuThree",
+                                                "designer|userClassName": "MyCheckItem6"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen15043",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMenucheckitemClick2",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('homeBody').getLayout().setActiveItem(2);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onMenucheckitemClick2"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen6716",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "designer|userClassName": "MyCheckItem7"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen6728",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "designer|userClassName": "MyCheckItem8"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen16131",
+                            "type": "cyclebutton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "showText": true,
+                                "designer|userClassName": "MyCycleButton3",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen16143",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 120,
+                                        "designer|userClassName": "MyMenu3"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen16150",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "MenuWizard",
+                                                "designer|userClassName": "MyCheckItem9"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen27282",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMenucheckitemClick3",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('homeBody').getLayout().setActiveItem(3);\r",
+                                                            "Ext.getCmp('wizardBasePanel').getLayout().setActiveItem(0);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onMenucheckitemClick3"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen16162",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "designer|userClassName": "MyCheckItem10"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen16174",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "designer|userClassName": "MyCheckItem11"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen30811",
+                            "type": "cyclebutton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "showText": true,
+                                "designer|userClassName": "MyCycleButton4",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen30823",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 120,
+                                        "designer|userClassName": "MyMenu4"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen30830",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "xyz signed in.",
+                                                "designer|userClassName": "MyCheckItem12"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen30842",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Sign Out",
+                                                "designer|userClassName": "MyCheckItem13"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen30854",
+                                            "type": "menucheckitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item",
+                                                "designer|userClassName": "MyCheckItem14"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen11072",
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "homeBody",
+                        "activeItem": 0,
+                        "layout": "card",
+                        "title": "",
+                        "designer|userClassName": "MyPanel3"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen11490",
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Menu One Panel",
+                                "designer|userClassName": "MyPanel4"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen11708",
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Menu Two Panel",
+                                "designer|userClassName": "MyPanel5"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen11924",
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Menu Three Panel",
+                                "designer|userClassName": "MyPanel6"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen17226",
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "wizardBasePanel",
+                                "activeItem": 0,
+                                "layout": "card",
+                                "title": "",
+                                "designer|userClassName": "MyPanel7"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen17631",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "stepone",
+                                        "title": "",
+                                        "designer|userClassName": "MyPanel8"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen19217",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Welcome to Wizard UI ......Step One of the Wizard Flow",
+                                                "designer|userClassName": "MyLabel"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen21965",
+                                            "type": "button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Next",
+                                                "designer|userClassName": "MyButton1"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen24886",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick1",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('wizardBasePanel').getLayout().setActiveItem(1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onButtonClick1"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen18003",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "steptwo",
+                                        "title": "",
+                                        "designer|userClassName": "MyPanel9"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen19752",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Step Two Of wizard flow",
+                                                "designer|userClassName": "MyLabel"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen22345",
+                                            "type": "button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Next",
+                                                "designer|userClassName": "MyButton2"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen25876",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick2",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('wizardBasePanel').getLayout().setActiveItem(2);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onButtonClick2"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen18671",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "stepthree",
+                                        "title": "",
+                                        "designer|userClassName": "MyPanel10"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen20209",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Step Three of Wizard Flow",
+                                                "designer|userClassName": "MyLabel"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen22786",
+                                            "type": "button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Finish",
+                                                "designer|userClassName": "MyButton3"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen26501",
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick3",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('wizardBasePanel').getLayout().setActiveItem(3);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me",
+                                                        "designer|userClassName": "onButtonClick3"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen23237",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "endWizard",
+                                        "title": "",
+                                        "designer|userClassName": "MyPanel11"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen23604",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Congrats you completed the wizard..now use menus to change screen please :)",
+                                                "designer|userClassName": "MyLabel3"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

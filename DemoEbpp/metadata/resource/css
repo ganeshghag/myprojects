@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen4667",
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "DemoEbpp.css"
+    },
+    "customConfigs": [],
+    "designerId": "6bc9dfc1-2aa7-4d2c-97a0-ab8a3a567c3e",
+    "$viewOrder": 0,
+    "expanded": true
+}

@@ -1,0 +1,53 @@
+.PanelBackground{
+	background-color: AliceBlue;
+}
+
+.GridBackground{
+	background-color: AliceBlue;
+}
+
+.ToolbarBackground{
+	background-color: AliceBlue;
+}
+.MyListItem{
+	background-color: AliceBlue;
+}
+
+.MyListItemSelected{
+	background-color: LightBlue;
+}
+.ListHeading1{
+	color: Blue;
+	font-size: 20px;
+	font-style: normal;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+
+
+.ListHeading2{
+	color: DarkRed;
+	font-size: 15px;
+	font-style: normal;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+
+.ListHeading3{
+	color: DarkRed;
+	font-size: 13px;
+	font-style: normal;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+
+.ListHeading4{
+	color: DarkRed;
+	font-size: 10px;
+	font-style: normal;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+.settingsIcon{
+	background-image:url('images/bell.png');
+}
